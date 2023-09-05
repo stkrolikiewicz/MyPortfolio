@@ -14,7 +14,8 @@ $mobile: 600px;
     padding-bottom: 50px;
   }
   @at-root &__card {
-    border-radius: 15px;
+    border-radius: 10px;
+    border: 1px solid var(--clr-contrast);
     width: 100%;
     height: auto;
     aspect-ratio: 3/2;
@@ -46,8 +47,8 @@ $mobile: 600px;
     height: 100%;
     padding: 35px;
     transition: all 0.3s ease-in-out;
-    background-color: var(--clr-yellow);
-    color: var(--clr-gray-1);
+    background-color: var(--clr-contrast);
+    color: var(--clr-white);
     opacity: 0;
     object-fit: cover;
     z-index: 2;

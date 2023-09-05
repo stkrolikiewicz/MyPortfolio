@@ -23,14 +23,22 @@ $mobile: 600px;
       flex-direction: column;
       gap: 30px;
     }
-
     @at-root &__image {
       width: 215px;
       height: 215px;
       aspect-ratio: 1/1;
       border-radius: 50%;
-      border: 0.75rem solid var(--clr-white);
-      outline: 0.25rem solid var(--clr-yellow);
+      border: 0.1rem solid var(--clr-white);
+      // background: rgba(255, 255, 255, 0.2);
+      // backdrop-filter: blur(20px);
+      background: linear-gradient(
+        45deg,
+        transparent 20%,
+        #137ec54c 40%,
+        #137DC5 60%,
+        rgba(255, 255, 255, 0.8) 90%
+      );
+      outline: 0.1rem solid var(--clr-contrast);
       outline-offset: -0.25rem;
       object-fit: cover;
       transition: all 0.3s ease-in-out;
@@ -52,8 +60,10 @@ $mobile: 600px;
 
     @at-root &__name {
       font-size: 46px;
+      font-family: "Croogla4f", sans-serif;
       line-height: 69px;
       font-weight: 500;
+      letter-spacing: 1.5px;
       color: var(--clr-primary-text);
       padding-bottom: 3px;
       transition: all 0.3s ease-in-out;

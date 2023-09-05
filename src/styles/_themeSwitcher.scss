@@ -1,9 +1,11 @@
 $clr-bg--light: var(--clr-white);
 $clr-fill--light: var(--clr-gray-1);
-$clr-bg--dark: var(--clr-dark-blue-2);
+// $clr-bg--dark: var(--clr-dark-blue-2);
+$clr-bg--dark: #111111;
 $clr-fill--dark: var(--clr-light-gray-1);
 $clr-border-light: var(--clr-light-3);
-$clr-border-dark: var(--clr-dark-blue-1);
+// $clr-border-dark: var(--clr-dark-blue-1);
+$clr-border-dark: #111111;
 $size: 2.5rem;
 $padding: 1.25rem;
 $mobile-size: 20px;

@@ -1,5 +1,3 @@
-# [Homework #13] - CSS Preprocessors & Environment  by Stanisław Królikiewicz
-
 ## Prerequisites
 In order to use this repo:
 

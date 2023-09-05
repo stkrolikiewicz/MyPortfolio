@@ -1,12 +1,14 @@
 :root {
   // GENERAL
   --clr-white: #FFFFFF;
-  --clr-dark : #19191B;
+  // --clr-dark : #19191B;
+  --clr-dark : black;
   --clr-light-1: #E9EBEC;
   --clr-light-2: #F1F2F4;
   --clr-light-3: #E7E7E7;
   --clr-black: #000000;
-  --clr-blue: #3E64AA;
+  // --clr-blue: #3E64AA;
+  --clr-blue: #137DC5;
   --clr-gray-1: #3D3D3D;
   --clr-gray-2: #575757;
   --clr-light-gray-1: #A3ABB2;
@@ -22,7 +24,7 @@
   --clr-page-bg: var(--clr-light-1);
 
   // GENERAL
-  --clr-yellow: var(--clr-yellow-1);
+  --clr-contrast: var(--clr-blue);
 
   // TEXT
   //      primary
@@ -32,9 +34,11 @@
   
   // BUTTONS
   //      primary
-  --clr-primary-button-bg: var(--clr-yellow);
-  --clr-primary-button-text: var(--clr-gray-1);
-  --clr-primary-button-bg--hover: var(--clr-blue);
+  --clr-primary-button-bg: var(--clr-contrast);
+  // --clr-primary-button-text: var(--clr-gray-1);
+  --clr-primary-button-text: var(--clr-white);
+  // --clr-primary-button-bg--hover: var(--clr-blue);
+  --clr-primary-button-bg--hover: rgb(19, 125, 197, 0.8);
   --clr-primary-button-text--hover: var(--clr-white);
   //      secondary
   --clr-secondary-button-bg: var(--clr-white);
@@ -45,16 +49,18 @@
 
   // TABS
   --clr-tabs-bg: var(--clr-white);
+  // --clr-tabs-bg: rgba(229, 229, 229, 0.04);
   --clr-tab-text: var(--clr-dark);
   --clr-tab-bg--active: var(--clr-light-gray-2);
+  // --clr-tab-bg--active: rgba(229, 229, 229, 0.2);
 }
 
 :root.dark {
   // page
-  --clr-page-bg: var(--clr-dark-blue-1);
+  --clr-page-bg: var(--clr-black);
 
   // GENERAL
-  --clr-yellow: var(--clr-yellow-2);
+  --clr-contrast: var(--clr-blue);
 
   // TEXT
   //      primary
@@ -64,19 +70,27 @@
 
   // BUTTONS
   //      primary
-  --clr-primary-button-bg: var(--clr-yellow);
-  --clr-primary-button-text: var(--clr-gray-1);
-  --clr-primary-button-bg--hover: var(--clr-blue);
+  // --clr-primary-button-bg: var(--clr-contrast);
+  // --clr-primary-button-text: var(--clr-gray-1);
+  --clr-primary-button-bg: var(--clr-contrast);
+  --clr-primary-button-text: var(--clr-white);
+  // --clr-primary-button-bg--hover: var(--clr-blue);
+  --clr-primary-button-bg--hover: rgb(19, 125, 197, 0.8);
   --clr-primary-button-text--hover: var(--clr-primary-text);
   //      secondary
-  --clr-secondary-button-bg: var(--clr-dark-blue-2);
-  --clr-secondary-button-text: var(--clr-secondary-text);
+  // --clr-secondary-button-bg: var(--clr-dark-blue-2);
+  --clr-secondary-button-bg: rgba(229, 229, 229, 0.2);
+  // --clr-secondary-button-text: var(--clr-secondary-text);
+  --clr-secondary-button-text: var(--clr-white);
   --clr-secondary-button-bg--hover: transparent;
   --clr-secondary-button-border--hover: var(--clr-blue);
   --clr-secondary-button-text--hover: var(--clr-blue);
 
   // TABS
-  --clr-tabs-bg: var(--clr-dark-blue-2);
-  --clr-tab-text: var(--clr-light-gray-2);
-  --clr-tab-bg--active: var(--clr-dark-blue-1);
+  // --clr-tabs-bg: var(--clr-dark-blue-2);
+  --clr-tabs-bg: rgba(229, 229, 229, 0.04);
+  // --clr-tab-text: var(--clr-light-gray-2);
+  --clr-tab-text: #e5e5e5;
+  // --clr-tab-bg--active: var(--clr-dark-blue-1);
+  --clr-tab-bg--active: rgba(229, 229, 229, 0.2);
 }
