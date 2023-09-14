@@ -15,7 +15,8 @@ $mobile: 600px;
   }
   @at-root &__card {
     border-radius: 10px;
-    border: 1px solid var(--clr-contrast);
+    border: 1px solid var(--clr-primary-text);
+    // border: 1px solid var(--clr-contrast);
     width: 100%;
     height: auto;
     aspect-ratio: 3/2;
