@@ -95,6 +95,7 @@ $mobile: 600px;
       height: fit-content;
       width: fit-content;
       display: flex;
+      text-decoration: none;
       transition: all 0.1s ease-in-out;
       &:hover {
         .profile-avatar__icon {
@@ -105,7 +106,30 @@ $mobile: 600px;
         transform: scale(0.9);
       }
     }
-
+    @at-root &__stanbyte {
+      width: full;
+      height: 36px;
+      border: 1px solid var(--clr-secondary-text);
+      color: var(--clr-secondary-text);
+      padding: 0 12px;
+      border-radius: 6px;
+      display: flex;
+      font-family: 'Croogla4f', sans-serif;
+      font-size: 16px;
+      letter-spacing: 1.2px;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.3s ease-in-out;
+      &:hover {
+        border-color: var(--clr-contrast);
+        color: var(--clr-contrast);
+      }
+      @media (max-width: $mobile) {
+        // width: 24px;
+        height: 24px;
+        font-size: 14px;
+      }
+    }
     @at-root &__icon {
       width: 36px;
       height: 36px;

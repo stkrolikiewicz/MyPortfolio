@@ -2,6 +2,10 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <link rel="icon" href="assets/icons/favicon.ico">
+  <meta name="description" content="Create portfolio, landing page, mobile app, responsive app.">
+  <meta name="keywords" content="Stanisław Królikiewicz, website, stanbyte, stanbyte company, responsive design, CSS, JavaScript">
+  <meta name="author" content="StanByte">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>SK - Portfolio</title>
   <link rel="stylesheet" href="styles/_main.scss">
@@ -25,15 +29,12 @@
             <a class="profile-avatar__link" href="https://github.com/stkrolikiewicz" target="_blank">
               <img class="profile-avatar__icon" src="assets/icons/github.svg" alt="GitHub" onload="SVGInject(this)">
             </a>
-            <!-- <a class="profile-avatar__link" href="https://twitter.com/" target="_blank">
-              <img class="profile-avatar__icon" src="assets/icons/twitter.svg" alt="Twitter" onload="SVGInject(this)">
-            </a> -->
             <a class="profile-avatar__link" href="https://www.linkedin.com/in/stanis%C5%82aw-kr%C3%B3likiewicz-b712a31a9/" target="_blank">
               <img class="profile-avatar__icon" src="assets/icons/linkedin.svg" alt="LinkedIn" onload="SVGInject(this)">
             </a>
-            <!-- <a class="profile-avatar__link" href="https://www.youtube.com/" target="_blank">
-              <img class="profile-avatar__icon" src="assets/icons/youtube.svg" alt="YouTube" onload="SVGInject(this)">
-            </a> -->
+            <a class="profile-avatar__link" href="https://www.stanbyte.com/" target="_blank">
+              <h3 class="profile-avatar__stanbyte">stanbyte</h3>
+            </a>
           </nav>
         </div>
       </div>
@@ -46,10 +47,6 @@
           <h3 class="profile-facts__value">10+</h3>
           <p class="profile-facts__name">Completed projects</p>
         </div>
-        <!-- <div class="profile-facts__item">
-          <h3 class="profile-facts__value">5+</h3>
-          <p class="profile-facts__name">Satisfied customers</p>
-        </div> -->
       </div>
       <div class="links">
         <a class="links__link button button--primary" href="assets/files/resume.pdf" download>
@@ -61,30 +58,49 @@
     </section>
     <nav class="tabs">
       <div class="tabs__background "></div>
-      <button class="tabs__button tabs__button--active button">Portfolio</button>
-      <button class="tabs__button button">Skills</button>
+      <button id="portfolio-tab" class="tabs__button tabs__button--active button">Portfolio</button>
+      <button id="skills-tab" class="tabs__button button">Skills</button>
     </nav>
   </header>
   <main class="page__wrapper main">
     <div id="portfolio" class="portfolio">
       <article class="portfolio__card">
+        <img class="portfolio__image" src="assets/images/ps127.png" alt="Photos Gallery">
+        <div class="portfolio__info">
+          <h3 class="portfolio__title">PS127</h3>
+          <p class="portfolio__description">Portfolio website for PS127 Project Studio. <br><strong>(in progress)</strong></p>
+          <div class="portfolio__links">
+            <a class="portfolio__link button" href="https://ps127.pro/" target="_blank">
+              <img class="portfolio__icon" src="assets/icons/external-link.svg" alt="External link" onload="SVGInject(this)">
+            </a>
+          </div>
+        </div>
+      </article>
+      <article class="portfolio__card">
+        <img class="portfolio__image" src="assets/images/honorata.png" alt="Photos Gallery">
+        <div class="portfolio__info">
+          <h3 class="portfolio__title">Honorata Zajączkowska</h3>
+          <p class="portfolio__description">Personal website for signer and actor.</p>
+          <div class="portfolio__links">
+            <a class="portfolio__link button" href="https://honoratazajaczkowska.pl/" target="_blank">
+              <img class="portfolio__icon" src="assets/icons/external-link.svg" alt="External link" onload="SVGInject(this)">
+            </a>
+          </div>
+        </div>
+      </article>
+      <article class="portfolio__card">
         <img class="portfolio__image" src="assets/images/photos-gallery.jpg" alt="Photos Gallery">
         <div class="portfolio__info">
           <h3 class="portfolio__title">Photos Gallery</h3>
           <p class="portfolio__description">Photos gallery built in Next.js based on Flickr's public API.</p>
-          <a class="portfolio__link button" href="https://flickr-photos-gallery.vercel.app/" target="_blank">
-            <img class="portfolio__icon" src="assets/icons/external-link.svg" alt="External link" onload="SVGInject(this)">
-          </a>
-        </div>
-      </article>
-      <article class="portfolio__card">
-        <img class="portfolio__image" src="assets/images/instamock.jpg" alt="Instamock">
-        <div class="portfolio__info">
-          <h3 class="portfolio__title">Instamock</h3>
-          <p class="portfolio__description">A Vue app that mocks instagram based on data stored inside supabase cloud.</p>
-          <a class="portfolio__link button" href="https://main--animated-wisp-65b379.netlify.app/" target="_blank">
-            <img class="portfolio__icon" src="assets/icons/external-link.svg" alt="External link" onload="SVGInject(this)">
-          </a>
+          <div class="portfolio__links">
+            <a class="portfolio__link button" href="https://flickr-photos-gallery.vercel.app/" target="_blank">
+              <img class="portfolio__icon" src="assets/icons/external-link.svg" alt="External link" onload="SVGInject(this)">
+            </a>
+            <a class="portfolio__link button" href="https://github.com/stkrolikiewicz/flickr-photos-gallery" target="_blank">
+              <img class="portfolio__icon" src="assets/icons/github.svg" alt="GitHub" onload="SVGInject(this)">
+            </a>
+          </div>
         </div>
       </article>
       <article class="portfolio__card">
@@ -92,9 +108,29 @@
         <div class="portfolio__info">
           <h3 class="portfolio__title">Trivial Quiz</h3>
           <p class="portfolio__description">A React app with quizes based on data retrieved from Open Trivia Database.</p>
-          <a class="portfolio__link button" href="https://stkrolikiewicz.github.io/trivial-quiz-app" target="_blank">
-            <img class="portfolio__icon" src="assets/icons/external-link.svg" alt="External link" onload="SVGInject(this)">
-          </a>
+          <div class="portfolio__links">
+            <a class="portfolio__link button" href="https://stkrolikiewicz.github.io/trivial-quiz-app" target="_blank">
+              <img class="portfolio__icon" src="assets/icons/external-link.svg" alt="External link" onload="SVGInject(this)">
+            </a>
+            <a class="portfolio__link button" href="https://github.com/stkrolikiewicz/trivial-quiz-app" target="_blank">
+              <img class="portfolio__icon" src="assets/icons/github.svg" alt="GitHub" onload="SVGInject(this)">
+            </a>
+          </div>
+        </div>
+      </article>
+      <article class="portfolio__card">
+        <img class="portfolio__image" src="assets/images/instamock.jpg" alt="Instamock">
+        <div class="portfolio__info">
+          <h3 class="portfolio__title">Instamock</h3>
+          <p class="portfolio__description">A Vue app that mocks instagram based on data stored inside supabase cloud.</p>
+          <div class="portfolio__links">
+            <a class="portfolio__link button" href="https://main--animated-wisp-65b379.netlify.app/" target="_blank">
+              <img class="portfolio__icon" src="assets/icons/external-link.svg" alt="External link" onload="SVGInject(this)">
+            </a>
+            <a class="portfolio__link button" href="https://github.com/stkrolikiewicz/instagram-mock" target="_blank">
+              <img class="portfolio__icon" src="assets/icons/github.svg" alt="GitHub" onload="SVGInject(this)">
+            </a>
+          </div>
         </div>
       </article>
       <article class="portfolio__card">
@@ -102,9 +138,14 @@
         <div class="portfolio__info">
           <h3 class="portfolio__title">What The Beer</h3>
           <p class="portfolio__description">Next.js app depicting information about different types of beers fetched from Punk API.</p>
-          <a class="portfolio__link button" href="https://what-the-beer.vercel.app/" target="_blank">
-            <img class="portfolio__icon" src="assets/icons/external-link.svg" alt="External link" onload="SVGInject(this)">
-          </a>
+          <div class="portfolio__links">
+            <a class="portfolio__link button" href="https://what-the-beer.vercel.app/" target="_blank">
+              <img class="portfolio__icon" src="assets/icons/external-link.svg" alt="External link" onload="SVGInject(this)">
+            </a>
+            <a class="portfolio__link button" href="https://github.com/stkrolikiewicz/What-the-Beer" target="_blank">
+              <img class="portfolio__icon" src="assets/icons/github.svg" alt="GitHub" onload="SVGInject(this)">
+            </a>
+          </div>
         </div>
       </article>
       <article class="portfolio__card">
@@ -112,9 +153,14 @@
         <div class="portfolio__info">
           <h3 class="portfolio__title">Carts Manipulator</h3>
           <p class="portfolio__description">Next.js App created to show and manipulate list of ready to use carts fetched from an external API.</p>
-          <a class="portfolio__link button" href="https://carts-manipulator.vercel.app/" target="_blank">
-            <img class="portfolio__icon" src="assets/icons/external-link.svg" alt="External link" onload="SVGInject(this)">
-          </a>
+          <div class="portfolio__links">
+            <a class="portfolio__link button" href="https://carts-manipulator.vercel.app/" target="_blank">
+              <img class="portfolio__icon" src="assets/icons/external-link.svg" alt="External link" onload="SVGInject(this)">
+            </a>
+            <a class="portfolio__link button" href="https://github.com/stkrolikiewicz/Carts-Manipulator" target="_blank">
+              <img class="portfolio__icon" src="assets/icons/github.svg" alt="GitHub" onload="SVGInject(this)">
+            </a>
+          </div>
         </div>
       </article>
       <article class="portfolio__card">
@@ -122,9 +168,11 @@
         <div class="portfolio__info">
           <h3 class="portfolio__title">Playlist Creator</h3>
           <p class="portfolio__description">Next.js app using Spotify API for developers.  Project created during DaftAcademy course with the entire group.</p>
-          <a class="portfolio__link button" href="https://github.com/DaftAcademy-Web-App-Development-2022/cls-5-stkrolikiewicz" target="_blank">
-            <img class="portfolio__icon" src="assets/icons/external-link.svg" alt="External link" onload="SVGInject(this)">
-          </a>
+          <div class="portfolio__links">
+            <a class="portfolio__link button" href="https://github.com/DaftAcademy-Web-App-Development-2022/cls-5-stkrolikiewicz" target="_blank">
+              <img class="portfolio__icon" src="assets/icons/github.svg" alt="GitHub" onload="SVGInject(this)">
+            </a>
+          </div>
         </div>
       </article>
     </div>
